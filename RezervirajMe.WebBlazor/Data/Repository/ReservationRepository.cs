@@ -39,5 +39,7 @@ namespace RezervirajMe.WebBlazor.Data.Repository
 		{
 			throw new System.NotImplementedException();
 		}
+
+		#endregion
 	}
 }

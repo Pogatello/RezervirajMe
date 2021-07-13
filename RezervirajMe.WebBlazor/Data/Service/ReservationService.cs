@@ -1,9 +1,10 @@
-﻿using RezervirajMe.WebBlazor.Data.Model.Contract;
+﻿using RezervirajMe.WebBlazor.Data.Contract;
+using RezervirajMe.WebBlazor.Data.Model.Contract;
 using System.Threading.Tasks;
 
 namespace RezervirajMe.WebBlazor.Data.Service
 {
-	public class ReservationService
+	public class ReservationService : IReservationService
 	{
 		#region Fields
 
