@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
-namespace RezervirajMe.Model
+namespace RezervirajMe.WebBlazor.Data.Model
 {
 	public class Reservation
 	{
@@ -8,15 +9,14 @@ namespace RezervirajMe.Model
 
 		public bool IsActive { get; set; }
 
-		public string UrlString { get; set; }
-
 		public byte[] LogoImage { get; set; }
 
 		public string Title { get; set; }
 
 		//enum every day, month repeating il neš tako
 
-		public IEnumerable<Appointment> Appointments { get; set; }
+		public Guid UserId { get; set; }
 
+		public IEnumerable<Appointment> Appointments { get; set; }
 	}
 }
